@@ -1,0 +1,6 @@
+mezcalito_file_manager:
+    storages:
+        local:
+            provider: local
+            options:
+                path: '%kernel.project_dir%/public'
