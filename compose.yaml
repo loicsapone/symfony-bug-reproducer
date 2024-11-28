@@ -1,0 +1,25 @@
+services:
+    php:
+        build: $PWD/.infrastructure/frankenphp
+        restart: on-failure
+        environment:
+            SERVER_NAME: ${SERVER_NAME:-localhost, caddy:80}
+        volumes:
+            - ./:/srv/app
+        ports:
+            - "80:80"
+            - "443:443"
+
+    database:
+        image: mariadb:10.11
+        restart: on-failure
+        volumes:
+            - db-data:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: ${MYSQL_DATABASE:-app}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD:-!ChangeMe!}
+            MYSQL_USER: ${MYSQL_USER:-app}
+
+volumes:
+    db-data:
