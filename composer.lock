@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "016be673b991b98e2f9d6d835df6f6f0",
+    "content-hash": "86ab076e8addfcd7d020200fc4e22c6a",
     "packages": [
         {
             "name": "composer/semver",
@@ -1475,6 +1475,76 @@
                 }
             ],
             "time": "2023-10-06T06:47:41+00:00"
+        },
+        {
+            "name": "mezcalito/ux-filemanager",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mezcalito/ux-filemanager.git",
+                "reference": "ef9bb9e3bcf761f409ca79ac5861ece2df4bcaf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mezcalito/ux-filemanager/zipball/ef9bb9e3bcf761f409ca79ac5861ece2df4bcaf4",
+                "reference": "ef9bb9e3bcf761f409ca79ac5861ece2df4bcaf4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/http-foundation": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
+                "symfony/options-resolver": "^6.4|^7.0",
+                "symfony/routing": "^6.4|^7.0",
+                "symfony/ux-live-component": "^2.17",
+                "symfony/ux-twig-component": "^2.17",
+                "twig/twig": "^3.0.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.57",
+                "phpstan/phpstan": "^1.11",
+                "phpstan/phpstan-symfony": "^1.4",
+                "phpunit/phpunit": "^11.1",
+                "rector/rector": "^1.1",
+                "symfony/asset": "^6.4|^7.0",
+                "symfony/asset-mapper": "^6.4|^7.0",
+                "symfony/browser-kit": "^7.1",
+                "symfony/css-selector": "^7.1",
+                "symfony/framework-bundle": "^6.4|^7.0",
+                "symfony/stimulus-bundle": "^2.17",
+                "symfony/test-pack": "^1.0",
+                "symfony/twig-bundle": "^6.4|^7.0",
+                "symfony/web-profiler-bundle": "^7.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Mezcalito\\FileManagerBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mezcalito",
+                    "email": "dev@mezcalito.fr",
+                    "homepage": "https://www.mezcalito.fr/"
+                }
+            ],
+            "description": "Effortless file management with Symfony UX and Mezcalito UX FileManager",
+            "homepage": "https://github.com/Mezcalito/imgproxy-bundle",
+            "keywords": [
+                "filemanager",
+                "symfony-ux"
+            ],
+            "support": {
+                "issues": "https://github.com/Mezcalito/ux-filemanager/issues",
+                "source": "https://github.com/Mezcalito/ux-filemanager/tree/0.1.2"
+            },
+            "time": "2024-09-06T21:34:25+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7093,6 +7163,99 @@
                 }
             ],
             "time": "2024-09-25T14:20:29+00:00"
+        },
+        {
+            "name": "symfony/ux-live-component",
+            "version": "v2.21.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/ux-live-component.git",
+                "reference": "1cc963a50a31a8ca92fbd145b29b27231b199b1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/ux-live-component/zipball/1cc963a50a31a8ca92fbd145b29b27231b199b1b",
+                "reference": "1cc963a50a31a8ca92fbd145b29b27231b199b1b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/property-access": "^5.4.5|^6.0|^7.0",
+                "symfony/stimulus-bundle": "^2.9",
+                "symfony/ux-twig-component": "^2.8",
+                "twig/twig": "^3.8.0"
+            },
+            "conflict": {
+                "symfony/config": "<5.4.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.0",
+                "doctrine/collections": "^1.6.8|^2.0",
+                "doctrine/doctrine-bundle": "^2.4.3",
+                "doctrine/orm": "^2.9.4",
+                "doctrine/persistence": "^2.5.2|^3.0",
+                "phpdocumentor/reflection-docblock": "5.x-dev",
+                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
+                "symfony/expression-language": "^5.4|^6.0|^7.0",
+                "symfony/form": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
+                "symfony/options-resolver": "^5.4|^6.0|^7.0",
+                "symfony/phpunit-bridge": "^6.1|^7.0",
+                "symfony/property-info": "^5.4|^6.0|^7.0",
+                "symfony/security-bundle": "^5.4|^6.0|^7.0",
+                "symfony/serializer": "^5.4|^6.0|^7.0",
+                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
+                "symfony/validator": "^5.4|^6.0|^7.0",
+                "zenstruck/browser": "^1.2.0",
+                "zenstruck/foundry": "^2.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/ux",
+                    "url": "https://github.com/symfony/ux"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\UX\\LiveComponent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Live components for Symfony",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "components",
+                "symfony-ux",
+                "twig"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/ux-live-component/tree/v2.21.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-10-15T10:36:54+00:00"
         },
         {
             "name": "symfony/ux-turbo",

@@ -1,5 +1,23 @@
 {
     "controllers": {
+        "@mezcalito/ux-filemanager": {
+            "filemanager": {
+                "enabled": true,
+                "fetch": "eager",
+                "autoimport": {
+                    "@mezcalito/ux-filemanager/dist/styles.min.css": true
+                }
+            }
+        },
+        "@symfony/ux-live-component": {
+            "live": {
+                "enabled": true,
+                "fetch": "eager",
+                "autoimport": {
+                    "@symfony/ux-live-component/dist/live.min.css": true
+                }
+            }
+        },
         "@symfony/ux-turbo": {
             "turbo-core": {
                 "enabled": true,
